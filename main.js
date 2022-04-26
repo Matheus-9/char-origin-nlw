@@ -1,21 +1,18 @@
-alert("-CRACHÁ NLW ORIGIN 2021-")
+
 const linksSocialMedia = {
   github: 'Matheus-9',
   instagram: 'matheus.9',
   facebook: 'rocketseat'
 } 
 
-// function userName(){
-//   document.getElementById("userName")
-//   .textContent = 'Matheus Soares'
-// }
+
 
 
 function changeSocialMediaLinks() {
   for (let li of socialLinks.children){
     const social = li.getAttribute('class')
     li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
-    // alert(li.children[0].href)
+   
   }
   
            
@@ -34,12 +31,7 @@ function getGithubProfileInfo(){
   })  
 }
 
-// function socialLinks(){
-//   for (let li of socialLinks.children){
-//     alert(li)
-//   }
-// }
-// userName()
+
 changeSocialMediaLinks()
 getGithubProfileInfo()
-// socialLinks()
+
